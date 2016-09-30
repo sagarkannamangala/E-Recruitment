@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageCandidate.master.cs" Inherits="MasterPageCandidate" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>E-Recruitment</title>
+    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/justified.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="headPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div>
+            <h1 style="color: whitesmoke;" class="marketing">Get "Me" Hired!</h1>
+            <nav>
+                <ul class="nav nav-justified">
+                    <li><a href="CandidateHome.aspx">Home</a></li>
+                    <li><a href="Resume.aspx">Build Resume</a></li>
+                    <li><a href="Search.aspx">Search</a></li>
+                    <li><a href="CandidateProfile.aspx">My Profile</a></li>
+                    <li><a href="JobsApplied.aspx">Jobs Applied</a></li>
+                    <li><a href="ContactUsCandidate.aspx">Contact us</a></li>
+                </ul>
+            </nav>
+
+            <div class="jumbotron">
+                <h1>"Apply for a Job"</h1>
+                <h3>Get hired by connecting to thousands of companies!</h3>
+                <h4>Get started and build your resume!</h4>
+                <p><a class="btn btn-warning btn-lg">Build Resume</a></p>
+            </div>
+            <div>
+                <form id="form1" runat="server">
+                    <div>
+
+                        <asp:ContentPlaceHolder ID="contentPlaceHolder" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <footer class="footer-distributed">
+
+            <div class="footer-right">
+            </div>
+
+            <div>
+
+                <div class="footer-links">
+                    <ul>
+                        <a class="btn breadcrumb" href="Company.aspx">Jobs</a>
+
+                        <a class="btn breadcrumb" href="#">Search</a>
+
+                        <a class="btn breadcrumb" href="CompanyProfile">Profile</a>
+
+                        <a class="btn breadcrumb" href="#">Contact us</a>
+
+                        <a class="btn breadcrumb" href="Sitemap.aspx">Site Map</a>
+                    </ul>
+                </div>
+
+                <p>Company Name &copy; 2015</p>
+            </div>
+
+        </footer>
+
+    </div>
+</body>
+</html>

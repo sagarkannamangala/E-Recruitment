@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+<siteMapNode url="~/Company.aspx" title="Applications"  description="Review the applications of candidates for your company">
+<siteMapNode url="~/SearchCompany.aspx" title="Search"  description="Search for a candidate based on skills" />
+<siteMapNode url="~/CompanyProfile" title="Profile"  description="Create a profile for your company" />
+<siteMapNode url="~/ContactUs" title="Contact us"  description="Contact us by this form" />
+    
+  </siteMapNode>
+</siteMap>

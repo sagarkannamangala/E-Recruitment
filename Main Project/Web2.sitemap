@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="home" title=""  description="">
+        <siteMapNode url=hom2" title=""  description="" />
+        <siteMapNode url="hom3" title=""  description="" />
+    </siteMapNode>
+  <siteMapNode url="" title=""  description="">
+    <siteMapNode url="" title=""  description="" />
+    <siteMapNode url="" title=""  description="" />
+  </siteMapNode>
+</siteMap>

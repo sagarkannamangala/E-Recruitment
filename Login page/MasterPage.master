@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <%--    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/justified.css" rel="stylesheet" />--%>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div>
+            <div class="container">
+                <h1 class="h2">
+                    Erecruitment</h1>
+                <a href="login.aspx">   Sign In</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Registration.aspx">Register</a>
+                <%-- <nav>
+          <ul class="nav nav-justified">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="Content2.aspx">Search</a></li>
+            <li><a href="JobLists.aspx">Apply</a></li>
+            <li><a href="#">Success Stories</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>--%>
+            </div>
+            <div class="jumbotron">
+                <h1>
+                    Job stuff!</h1>
+                <asp:Menu ID="mnuStudent" runat="server" BackColor="#F7F6F3" 
+                    DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="Medium" 
+                    ForeColor="#7C6F57" Orientation="Horizontal" StaticSubMenuIndent="12px" 
+                    Visible="False">
+                    <DynamicHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <DynamicMenuStyle BackColor="#F7F6F3" />
+                    <DynamicSelectedStyle BackColor="#5D7B9D" />
+                    <Items>
+                       <%-- <asp:MenuItem Text="Home" Value="Home"></asp:MenuItem>
+                        <asp:MenuItem Text="Resume" Value="Resume"></asp:MenuItem>
+                        <asp:MenuItem Text="My Profile" Value="My Profile"></asp:MenuItem>
+                        <asp:MenuItem Text="Job Applied" Value="Job Applied"></asp:MenuItem>
+                        <asp:MenuItem Text="Success Stories" Value="Success Stories"></asp:MenuItem>--%>
+                    </Items>
+                    <StaticHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <StaticSelectedStyle BackColor="#5D7B9D" />
+                </asp:Menu>
+                <asp:Menu ID="mnuCompany" runat="server" BackColor="#E3EAEB" 
+                    DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="Medium" 
+                    ForeColor="#666666" Orientation="Horizontal" StaticSubMenuIndent="10px" 
+                    Visible="False">
+                    <DynamicHoverStyle BackColor="#666666" ForeColor="White" />
+                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <DynamicMenuStyle BackColor="#E3EAEB" />
+                    <DynamicSelectedStyle BackColor="#1C5E55" />
+                    <Items>
+                        <asp:MenuItem Text="Add/Edit Jobs" Value="Add/Edit Jobs"></asp:MenuItem>
+                        <asp:MenuItem Text="Search" Value="Search"></asp:MenuItem>
+                        <asp:MenuItem Text="Company Profile" Value="Company Profile"></asp:MenuItem>
+                    </Items>
+                    <StaticHoverStyle BackColor="#666666" ForeColor="White" />
+                    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <StaticSelectedStyle BackColor="#1C5E55" />
+                </asp:Menu>
+                <p class="lead">
+                    With graduation you finally get to start on your path to success in life – success
+                    or failure, whatever happens it’s now up to you. Sign up and Discover the benefits</p>
+                <p>
+                    <asp:Button ID="Button1" runat="server" Text="Get Started Today" CssClass="btn btn-lg btn-success" /></p>
+            </div>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageCompany.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>E-Recruitment</title>
+    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/justified.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="headPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <div class="container" style="max-height: 800px;">
+        <div style="max-height: 800px;">
+
+            <div>
+                <h1 style="color: whitesmoke;" class="marketing">Get "Me" Hired!</h1>
+                <nav>
+                    <ul class="nav nav-justified">
+                        <li><a href="Company.aspx">Applications</a></li>
+                        <li><a href="SearchCompany.aspx">Search</a></li>
+                        <li><a href="CompanyProfile.aspx">Profile</a></li>
+                        <li><a href="ContactUs.aspx">Contact us</a></li>
+                    </ul>
+                </nav>
+
+                <div class="jumbotron">
+                    <h1>"Post a Job"</h1>
+                    <h3>Get connected to many job seekers through few clicks!</h3>
+                    <h4>Get started and view the applicants below!</h4>
+                    <p><a class="btn btn-info btn-lg">Post</a></p>
+                </div>
+                <div>
+                    <form id="form1" runat="server">
+                        <div>
+
+                            <asp:ContentPlaceHolder ID="formPlaceHolder" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            </div>
+        </div>
+            <footer class="footer-distributed">
+
+                <div class="footer-right">
+                </div>
+
+                <div>
+
+                    <div class="footer-links">
+                        <ul>
+                            <a class="btn breadcrumb" href="Company.aspx">Jobs</a>
+
+                            <a class="btn breadcrumb" href="#">Search</a>
+
+                            <a class="btn breadcrumb" href="CompanyProfile">Profile</a>
+
+                            <a class="btn breadcrumb" href="#">Contact us</a>
+
+                            <a class="btn breadcrumb" href="Sitemap.aspx">Site Map</a>
+                        </ul>
+                    </div>
+
+                    <p>Company Name &copy; 2015</p>
+                </div>
+
+            </footer>
+
+        
+    
+</body>
+</html>
